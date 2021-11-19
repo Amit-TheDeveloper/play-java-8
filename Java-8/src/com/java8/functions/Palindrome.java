@@ -27,7 +27,7 @@ public class Palindrome {
 	
 	private boolean doTest(Optional<String> tempObj) {
 		char[] inputChars = tempObj.get().toCharArray();
-		return (IntStream.rangeClosed(0, inputChars.length/2).allMatch(i -> inputChars[i] == inputChars[(inputChars.length - i)-1]));
+		return (IntStream.rangeClosed(0, inputChars.length/2).anyMatch(i -> inputChars[i] == inputChars[(inputChars.length - i)-1]));
 	}
 
 }
