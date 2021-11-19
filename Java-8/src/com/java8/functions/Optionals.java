@@ -11,6 +11,7 @@ public class Optionals {
 		
 		System.out.println(name.isPresent() ? name.get() : "No name");
 		System.out.println(empty.isPresent() ? name.get() : "No name");
+		System.out.println(name.orElse("please put a name"));
 		System.out.println(orelseTest.orElse("please put a name"));
 	}
 	
