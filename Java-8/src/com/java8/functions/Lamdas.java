@@ -16,7 +16,9 @@ public class Lamdas {
 		String rabbit = "rabbit";
 		String empty = "    ";
 		
-		List<String> allAnimals = List.of(panda, dog, cat, horse, cow, rabbit, empty);
+		//List<String> allAnimals = List.of(panda, dog, cat, horse, cow, rabbit, empty);
+
+		List<String> allAnimals = null;
 		
 		//print all animamls
 		allAnimals.forEach(System.out::println);

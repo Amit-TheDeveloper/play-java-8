@@ -48,7 +48,7 @@ public class WordCount {
 
 	private void countLetters(String paragraph) {
 		Optional<String> input = Optional.of(paragraph);
-		Stream.of(getWordList(input)).flatMap(c -> c.lines()).forEach(c -> System.out.println(c));
+		Stream.of(getWordList(input)).forEach(c -> System.out.println(c));
 		//Stream<Stream<String>> charStream = Stream.of(wordStream);
 		//charStream.forEach(c -> c.map(d -> d.toCharArray()).map(e -> Character.valueOf(e)));
 		
